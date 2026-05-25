@@ -10,9 +10,9 @@ namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Models
         public Guid Id { get; set; }
 
 
-        [Required]
+        
         [MinLength(8)]
-        public string Enunciado { get; set; }
+        public string? Enunciado { get; set; }
 
         [Required]
         public string Estado { get; set; } = "Sin_Resolver";

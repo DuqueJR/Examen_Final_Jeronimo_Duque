@@ -21,19 +21,13 @@ namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Controllers
             return View();
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(Guid Id)
-        {
-            var result = await _service.GetById(Id);
-            return result != null ? Ok(result) : NotFound("Ninguna Pregunta Encontrada con este ID"); 
-        }
+        
 
         [HttpPost]
         public async Task<IActionResult> Create(CreatePreguntaDTO dto)
         {
             var created = await _service.Create(dto);
-            return CreatedAtAction(nameof(GetById),
-                                    new { id = created.Id }, dto);
+            return Ok(created);
 
         }
 
