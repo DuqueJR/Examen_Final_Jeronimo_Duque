@@ -35,7 +35,7 @@ namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Services
 
         public async Task<List<Preguntas>> GetByEstado(string estado)
         {
-            var resultado = await _context.Pregunta.Where(e => e.Estado == "estado").ToListAsync();
+            var resultado = await _context.Pregunta.Where(e => e.Estado == estado).ToListAsync();
             return resultado == null || !resultado.Any() ? null : resultado; 
 
         }
