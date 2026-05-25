@@ -11,5 +11,6 @@ namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Persistence
         }
 
         public DbSet<Preguntas> Pregunta { get; set; }
+        public DbSet<Respuesta> Respuesta { get; set; }
     }
 }
