@@ -17,5 +17,7 @@ namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Models
         [ForeignKey(nameof(pregunta_Id))]
         public Preguntas pregunta { get; set; } = null!;
 
+        public DateTime FechaCreacion { get; set; } = DateTime.Now; 
+
     }
 }
