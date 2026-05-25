@@ -10,7 +10,7 @@ namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Models
         public Guid id { get; set; }
 
         [MinLength(2)]
-        public string enunciado { get; set; }
+        public string? enunciado { get; set; }
 
         public Guid pregunta_Id { get; set; }
 

@@ -6,7 +6,7 @@ namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Models.DTOs
     {
         [Required]
         [MinLength(2)]
-        public string Enunciado { set; get; }
+        public string? Enunciado { set; get; }
 
         public Guid Pid { get; set; }
     }

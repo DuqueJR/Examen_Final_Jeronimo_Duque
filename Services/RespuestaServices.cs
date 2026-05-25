@@ -22,8 +22,8 @@ namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Services
             }
 
             var Respuesta = new Respuesta();
-            Respuesta.Enunciado = dto.Enunciado;
-            Respuesta.Pregunta_Id = dto.Pid;
+            Respuesta.enunciado = dto.Enunciado;
+            Respuesta.pregunta_Id = dto.Pid;
 
             associated_pregunta.Estado = "Resuelta";
 
