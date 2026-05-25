@@ -1,4 +1,6 @@
+using FINAL_WEB_JERONIMO_DUQUE_RUIZ.Interfaces;
 using FINAL_WEB_JERONIMO_DUQUE_RUIZ.Persistence;
+using FINAL_WEB_JERONIMO_DUQUE_RUIZ.Services;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
@@ -11,6 +13,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<IRespuestaService, RespuestaServices>();
+builder.Services.AddScoped<IPreguntasServices, PreguntasServices>();
+
 
 var app = builder.Build();
 

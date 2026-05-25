@@ -1,10 +1,11 @@
-﻿using FINAL_WEB_JERONIMO_DUQUE_RUIZ.Models;
+﻿using FINAL_WEB_JERONIMO_DUQUE_RUIZ.Interfaces;
+using FINAL_WEB_JERONIMO_DUQUE_RUIZ.Models;
 using FINAL_WEB_JERONIMO_DUQUE_RUIZ.Models.DTOs;
 using FINAL_WEB_JERONIMO_DUQUE_RUIZ.Persistence;
 
 namespace FINAL_WEB_JERONIMO_DUQUE_RUIZ.Services
 {
-    public class RespuestaServices
+    public class RespuestaServices:IRespuestaService
     {
         private readonly ApplicationDbContext _context;
 
