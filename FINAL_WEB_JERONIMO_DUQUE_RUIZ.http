@@ -1,0 +1,6 @@
+@FINAL_WEB_JERONIMO_DUQUE_RUIZ_HostAddress = http://localhost:5241
+
+GET {{FINAL_WEB_JERONIMO_DUQUE_RUIZ_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
